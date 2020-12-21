@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="Demo.Views.MainView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:vm="clr-namespace:Demo.ViewModels;assembly=Demo.ViewModels"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="700">
+    <UserControl.Resources>
+        <vm:MainViewModel x:Key="Model">
+        </vm:MainViewModel>
+    </UserControl.Resources>
+
+    <Grid d:DataContext="{StaticResource Model}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <ToolBar Grid.Row="0">
+            <Button Content="Reload" Command="{Binding Path=LoadDataCommand}"></Button>
+            <Separator/>
+            <Button Content="Download" Command="{Binding Path=DownloadCommand}"></Button>
+        </ToolBar>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+        </Grid>
+    </Grid>
+
+</UserControl>
