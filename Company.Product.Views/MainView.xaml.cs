@@ -1,6 +1,6 @@
 ﻿using System.Windows.Controls;
 
-namespace Demo.Views
+namespace Company.Product.Views
 {
     /// <summary>
     /// Interaction logic for MainView.xaml

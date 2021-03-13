@@ -1,12 +1,11 @@
-﻿using System.Threading.Tasks;
-using System.Windows;
-using Demo.Models.Helpers;
-using Demo.Views.Helpers;
-using Demo.WinApp.Settings;
+﻿using System.Windows;
+using Company.Product.Models.Helpers;
+using Company.Product.Views.Helpers;
+using Company.Product.WinApp.Settings;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
-namespace Demo.WinApp
+namespace Company.Product.WinApp
 {
     /// <summary>
     ///     Interaction logic for MainWindow.xaml

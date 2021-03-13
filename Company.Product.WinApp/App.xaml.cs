@@ -3,14 +3,14 @@ using System.ComponentModel;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Threading;
-using Demo.Models.Helpers;
-using Demo.WinApp.Settings;
+using Company.Product.Models.Helpers;
+using Company.Product.WinApp.Settings;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace Demo.WinApp
+namespace Company.Product.WinApp
 {
     /// <summary>
     ///     Interaction logic for App.xaml

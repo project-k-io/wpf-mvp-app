@@ -1,4 +1,4 @@
-﻿namespace Demo.WinApp.Settings
+﻿namespace Company.Product.WinApp.Settings
 {
     public class LayoutSettings
     {

@@ -1,0 +1,8 @@
+﻿<Application x:Class="Company.Product.WinApp.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:winApp="clr-namespace:Company.Product.WinApp">
+    <Application.Resources>
+        <winApp:AppViewModel x:Key="MainViewModel" Title="Company WinApp Ver 1.0" />
+    </Application.Resources>
+</Application>

@@ -1,7 +1,7 @@
 ﻿using System.Text.Json.Serialization;
 using System.Windows;
 
-namespace Demo.WinApp.Settings
+namespace Company.Product.WinApp.Settings
 {
     public class WindowSettings
     {

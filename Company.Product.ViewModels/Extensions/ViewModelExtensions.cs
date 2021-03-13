@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
-using Demo.Models.Helpers;
+using Company.Product.Models.Helpers;
 using GalaSoft.MvvmLight;
 using Microsoft.Extensions.Logging;
 
-namespace Demo.ViewModels.Extensions
+namespace Company.Product.ViewModels.Extensions
 {
     public static class ViewModelExtensions
     {

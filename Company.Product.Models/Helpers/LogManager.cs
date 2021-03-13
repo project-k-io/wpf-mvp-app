@@ -2,7 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-namespace Demo.Models.Helpers
+namespace Company.Product.Models.Helpers
 {
     public class LogManager
     {

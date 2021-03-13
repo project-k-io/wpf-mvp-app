@@ -2,13 +2,13 @@
 using System.IO;
 using System.Reflection;
 using System.Threading.Tasks;
-using Demo.Models.Helpers;
-using Demo.ViewModels;
-using Demo.WinApp.Settings;
+using Company.Product.Models.Helpers;
+using Company.Product.ViewModels;
+using Company.Product.WinApp.Settings;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
-namespace Demo.WinApp
+namespace Company.Product.WinApp
 {
     public class AppViewModel : MainViewModel
     {
@@ -24,12 +24,20 @@ namespace Demo.WinApp
 
         #endregion
 
+        public AppViewModel() 
+        {
+            Title = "Company Product WinApp";
+        }
+
+
         public AppViewModel(IOptions<AppSettings> settings)
         {
             _settings = settings.Value;
             Assembly = Assembly.GetExecutingAssembly();
             Logger = LogManager.GetLogger<AppViewModel>();
             Logger.LogDebug("Import Logging()");
+
+            Title = $"Company Product WinApp ver {Ver}";
         }
 
         public void SaveSettings()
@@ -57,6 +65,11 @@ namespace Demo.WinApp
         public Assembly Assembly { get; set; }
 
         public Action<Action> OnDispatcher { get; set; }
+
+        public string Title { get; set; }
+        public string Ver { get; set; } = "1.0";
+
+
 
         #endregion
     }

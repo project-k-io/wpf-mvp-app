@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Xml.Serialization;
 using Microsoft.Extensions.Logging;
 
-namespace Demo.Models.Helpers
+namespace Company.Product.Models.Helpers
 {
     public class FileHelper
     {

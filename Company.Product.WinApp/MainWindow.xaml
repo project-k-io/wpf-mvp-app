@@ -1,12 +1,14 @@
-﻿<Window x:Class="Demo.WinApp.MainWindow"
+﻿<Window x:Class="Company.Product.WinApp.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:vw="clr-namespace:Demo.Views;assembly=Demo.Views"
+        xmlns:views="clr-namespace:Company.Product.Views;assembly=Company.Product.Views"
         mc:Ignorable="d"
-        Title="MainWindow" Height="150" Width="400">
+        d:DataContext="{StaticResource MainViewModel}"
+        Title="{Binding Title}" Height="150" Width="400"
+        >
     <Grid>
-        <vw:MainView></vw:MainView>
+        <views:MainView></views:MainView>
     </Grid>
 </Window>

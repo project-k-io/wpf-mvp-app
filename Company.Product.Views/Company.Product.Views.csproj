@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Demo.ViewModels\Demo.ViewModels.csproj" />
+    <ProjectReference Include="..\Company.Product.ViewModels\Company.Product.ViewModels.csproj" />
   </ItemGroup>
 
 </Project>

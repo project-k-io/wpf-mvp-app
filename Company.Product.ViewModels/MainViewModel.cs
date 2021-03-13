@@ -1,13 +1,10 @@
-﻿using System.IO;
-using System.Threading.Tasks;
-using System.Windows.Input;
-using Demo.Models;
-using Demo.Models.Helpers;
+﻿using System.Windows.Input;
+using Company.Product.Models.Helpers;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using Microsoft.Extensions.Logging;
 
-namespace Demo.ViewModels
+namespace Company.Product.ViewModels
 {
     public class MainViewModel : ViewModelBase
     {
@@ -16,6 +13,7 @@ namespace Demo.ViewModels
 
         public ICommand LoadDataCommand { get; }
         public ICommand DownloadCommand { get; }
+
 
         public MainViewModel()
         {
