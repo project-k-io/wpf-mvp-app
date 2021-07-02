@@ -1,2 +1,1 @@
-# wpf-mvp-app
-WPF MVP App
+# WPF MVP App
